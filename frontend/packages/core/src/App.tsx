@@ -141,7 +141,12 @@ const App: FunctionComponent = () => {
                         </ErrorBoundary>
                     </Router>
                 </Main>
-                <ToastContainer autoClose={100000} draggable={false} closeOnClick={false} />
+                <ToastContainer
+                    style={{wordBreak: 'break-all'}}
+                    autoClose={100000}
+                    draggable={false}
+                    closeOnClick={false}
+                />
             </SWRConfig>
         </div>
     );
