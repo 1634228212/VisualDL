@@ -150,7 +150,6 @@ export async function fetcher<T = unknown>(url: string, options?: RequestInit): 
                     fileReader.readAsArrayBuffer(data);
                 });
         }
-        console.log('datas', data);
         let filename: string | null = null;
         if (disposition && disposition.indexOf('attachment') !== -1) {
             const matches = /filename[^;=\n]*=((['"]).*?\2|[^;\n]*)/.exec(disposition);
